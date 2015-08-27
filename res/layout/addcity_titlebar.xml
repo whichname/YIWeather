@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dip"
+    android:background="@color/titlebar_background">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/backup_addcity_titlebar_bn"
+            android:layout_alignParentLeft="true"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:src="@drawable/backup"
+            android:background="@drawable/imageview_background"
+            android:clickable="true"
+            />
+        <TextView 
+            android:id="@+id/addcity_titlebar_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dip"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/backup_addcity_titlebar_bn"
+            android:text="@string/addcity"
+            style="@style/text_system"/>
+        
+        <ImageView
+            android:id="@+id/gps_addcity_titlebar_bn"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/gps"
+            android:background="@drawable/imageview_background"
+            android:clickable="true"/>
+        <ImageView 
+            android:id="@+id/search_addcity_titlebar_bn"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_toLeftOf="@id/gps_addcity_titlebar_bn"
+            android:src="@drawable/search"
+            android:background="@drawable/imageview_background"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

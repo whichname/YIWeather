@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/layout_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView 
+            android:id="@+id/weather_now_icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon0"/>
+        <LinearLayout 
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <TextView 
+                android:id="@+id/weather_now_tempeture_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未知"
+                android:textColor="@color/white"
+                android:textSize="45dp"
+                />
+            <TextView 
+                android:id="@+id/weather_now_text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未知"
+                android:textColor="@color/white"
+                android:textSize="30dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <include 
+        layout="@layout/weather_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />"
+    
+    <include 
+        layout="@layout/today_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+        
+    
+    
+    <TableLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:stretchColumns="*">
+        <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/white"/>
+        <TableRow>
+            <TextView 
+                android:id="@+id/city_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="未知"
+                style="@style/text_system"/>
+            <TextView 
+                android:id="@+id/last_update_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="未知"
+                android:gravity="right"
+                style="@style/text_system"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

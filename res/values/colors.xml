@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#efdeb0</color>
+    <drawable name="pressed">#AA555555</drawable>
+    <drawable name="bn_pressed">#AA000000</drawable>
+    <drawable  name="bn_background">#aa555555</drawable>
+    <color name="titlebar_background">#66555555</color>
+    <color name="future_background">#77555555</color>
+    <color name="layout_background">#11555555</color>
+    <color name="activity_layout_background">#424b50</color>
+    <color name="white">#ffffff</color>
+</resources>

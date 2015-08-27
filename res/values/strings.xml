@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">一天气</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="addcity">添加城市</string>
+	<string name="saved_cities">历史列表</string>
+	<string name="searchcities">搜索城市</string>
+	<string name="setting">设置</string>
+	<string name="about">关于作者:\n邮箱:wzm625278436@qq.com</string>
+</resources>

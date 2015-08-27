@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_layout_background"
+    android:orientation="vertical" >
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="45dip"
+    android:background="@color/titlebar_background">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/backup_search_titlebar_bn"
+            android:layout_alignParentLeft="true"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:src="@drawable/backup"
+            android:background="@drawable/imageview_background"
+            android:clickable="true"
+            />
+        <TextView 
+            android:id="@+id/searchactivity_titlebar_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dip"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/backup_search_titlebar_bn"
+            android:text="@string/searchcities"
+            style="@style/text_system"/>
+        
+    </RelativeLayout>
+</LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dip"
+        android:orientation="horizontal"
+        android:background="@color/titlebar_background">
+        <EditText 
+        android:id="@+id/search_input"
+        android:layout_width="0dip"
+        android:layout_height="45dip"
+        android:layout_weight="1.0"
+        style="@style/text_system"
+        android:hint="请输入地区名"/>
+    </LinearLayout>
+	
+    <ListView 
+        android:id="@+id/cities_search_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dip"
+        android:background="@color/layout_background"
+        />
+    
+    
+</LinearLayout>

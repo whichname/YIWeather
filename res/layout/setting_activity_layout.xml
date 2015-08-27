@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_layout_background"
+    android:orientation="vertical" >
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="45dip"
+    android:background="@color/titlebar_background">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/backup_setting_titlebar_bn"
+            android:layout_alignParentLeft="true"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:src="@drawable/backup"
+            android:background="@drawable/imageview_background"
+            android:clickable="true"
+            />
+        <TextView 
+            android:id="@+id/setting_titlebar_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dip"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/backup_setting_titlebar_bn"
+            android:text="@string/setting"
+            style="@style/text_system"/>
+        
+    </RelativeLayout>
+</LinearLayout>
+
+    <TextView 
+        android:id="@+id/setting_about_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="@string/about"
+        style="@style/text_system"/>    
+    
+    <Button 
+        android:id="@+id/update_app_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="更新程序"
+        style="@style/text_system"
+        android:background="@drawable/button_background"
+        />
+    
+    
+</LinearLayout>
